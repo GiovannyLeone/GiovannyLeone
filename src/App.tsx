@@ -1,4 +1,5 @@
 import './App.css';
+import './assets/scss/animation.scss';
 import Profile from './components/Profile'
 
 function App() {
