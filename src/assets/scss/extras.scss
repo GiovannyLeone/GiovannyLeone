@@ -1,0 +1,33 @@
+@import '../css/colors.css', '../css/fonts.css';
+
+.extras {
+    position: fixed;
+    width: 100px;
+    height: 24px;
+    top: 24px;
+    right: 35px;
+    z-index: 99;
+    text-align: right;
+    // display: flex;
+    white-space: nowrap;
+
+    img {
+        cursor: pointer;
+        transition: all .25s;
+        height: 30px;
+        display: inline-block;
+        margin-right: 10px;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .beta {
+        position: fixed;
+        top: 8px;
+        right: 8px;
+        font-size: 8px;
+        color: #0D0D0D;
+    }
+}
