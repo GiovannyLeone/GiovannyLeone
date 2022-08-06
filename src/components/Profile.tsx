@@ -1,5 +1,5 @@
 import React from 'react'
-import Me from '../assets/img/profile2.png'
+import Me from '../assets/img/me.png'
 import $ from 'jquery'
 
 
@@ -40,7 +40,7 @@ export default function Profile() {
                         <svg viewBox="0 0 1320 300">
                             <text className="xl g" x="17%" y="65%" dy=".35em" text-anchor="middle">Giovanny</text>
                             <text className="xl l" x="25%" y="90%" dy=".35em" text-anchor="middle">Leone</text>
-                            <text className="xl dev" x="18.5%" y="110%" dy=".35em" text-anchor="middle">Dev Full-Stack Junior</text>
+                            <text className="xl dev" x="18.5%" y="110%" dy=".35em" text-anchor="middle">Full-Stack Dev Junior</text>
                         </svg>
                     </figure>
                     <p className='textAboutMe'>Olá Mundo! Me chamo Giovanny, Tenho 19 anos sou estudante de ensino técnico, desenvolvo aplicações web tanto Front-End

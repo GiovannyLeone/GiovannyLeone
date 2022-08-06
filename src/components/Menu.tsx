@@ -14,8 +14,12 @@ export default function Menu() {
     return (
         <>
             <div className="menu">
-            <img src={close} alt="" v-if="opened" />
-            <img src={menu} alt="" v-if="!opened" />
+            {/* <img src={close} alt="" v-if="opened" />
+            <img src={menu} alt="" v-if="!opened" /> */}
+
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             </>
 

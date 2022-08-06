@@ -62,6 +62,54 @@ body{
     font-size: 20px;
 }
 
+/* Menu */
+
+
+
+.menuHamburguer span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #3747A6;
+
+    
+}
+
+.menuHamburguer>span:nth-child(1) {
+    top: 0;
+    z-index: 9999;
+    /* Efeito Neon Cores respectivas */
+    background: #3747A6;
+    
+}
+
+.menuHamburguer>span:nth-child(2) {
+    top: 8px;
+    left: 13px;
+    z-index: 9999;
+    /* Efeito Neon Cores respectivas */
+    background: #3747A6;
+  
+
+}
+
+.menuHamburguer>span:nth-child(3) {
+    top: 16px;
+    left: 28px;
+    z-index: 9999;
+    /* Efeito Neon Cores respectivas */
+    background: #3747A6;
+
+}
+
+/* Close The Btn 
+
+Efeito de fechar o menu 
+
+*/
+
 /* star shooting */
 
 .starts {
@@ -206,40 +254,70 @@ body{
         margin: 0 10px;
     }
 
+    .starts::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 300px;
+        height: 1px;
+        background: linear-gradient(90deg, #435ad9, transparent);
+    }
+
+    @keyframes animate {
+        0% {
+            transform: rotate(-90deg) translateX(100px);
+            opacity: 1;
+        }
+    
+        70% {
+            opacity: 0.5;
+        }
+    
+        100% {
+            transform: rotate(-90deg) translateX(-400px);
+            opacity: 0;
+        }
+    }
+
     .starts:nth-child(1) {
-        top: -14px;
-        right: 50%;
+        top: -4px;
+        right: 10%;
         left: initial;
         animation-delay: 0;
         animation-duration: 1s;
     }
     
     .starts:nth-child(2) {
-        top: -14px;
-        right: 50%;
+        top: -4px;
+        right: 20%;
         left: initial;
         animation-delay: 0.2s;
         animation-duration: 3s;
+        display: none;
+
     }
     
     .starts:nth-child(3) {
-        top: -14px;
-        right: 50%;
+        top: -4px;
+        right: 30%;
         left: initial;
         animation-delay: 0.4s;
         animation-duration: 2s;
     }
     
     .starts:nth-child(4) {
-        top: -14px;
-        right: 50%;
+        top: -4px;
+        right: 40%;
         left: initial;
         animation-delay: 0.6s;
         animation-duration: 1.5s;
+        display: none;
+
     }
     
     .starts:nth-child(5) {
-        top: -14px;
+        top: -4px;
         right: 50%;
         left: initial;
         animation-delay: 0.8s;
@@ -247,43 +325,49 @@ body{
     }
     
     .starts:nth-child(6) {
-        top: -14px;
-        right: 50%;
+        top: -4px;
+        right: 60%;
         left: initial;
         animation-delay: 1s;
         animation-duration: 3s;
+        display: none;
+
     }
     
     .starts:nth-child(7) {
-        top: -14px;
-        right: 50%;
+        top: -4px;
+        right: 70%;
         left: initial;
         animation-delay: 1s;
         animation-duration: 1.75s;
     }
     
     .starts:nth-child(8) {
-        top: -14px;
-        right: 50%;
+        top: -4px;
+        right: 80%;
         left: initial;
         animation-delay: 1.4s;
         animation-duration: 1.25s;
+        display: none;
+
     }
     
     .starts:nth-child(9) {
-        top: -14px;
-        right: 50%;
+        top: -4px;
+        right: 90%;
         left: initial;
         animation-delay: 0.75s;
         animation-duration: 2.25s;
     }
     
     .starts:nth-child(10) {
-        top: -14px;
-        right: 50%;
+        top: -4px;
+        right: 100%;
         left: initial;
         animation-delay: 2.75s;
         animation-duration: 2.25s;
+        display: none;
+
     }
 
 }
