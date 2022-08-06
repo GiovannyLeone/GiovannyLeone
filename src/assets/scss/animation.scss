@@ -65,10 +65,25 @@ $duration: .75s;
 
 @keyframes inAndOut {
 
-    0%{ transform: translateY(-50px); opacity: 0}
-    10%{ transform: translateY(0px); opacity: 1}
-    90%{ transform: translateY(0px); opacity: 1}
-    100%{ transform: translateY(+50px); opacity: 0}
+    0% {
+        transform: translateY(-50px);
+        opacity: 0
+    }
+
+    10% {
+        transform: translateY(0px);
+        opacity: 1
+    }
+
+    90% {
+        transform: translateY(0px);
+        opacity: 1
+    }
+
+    100% {
+        transform: translateY(+50px);
+        opacity: 0
+    }
 }
 
 .inAndOut {
@@ -848,12 +863,13 @@ $duration: .75s;
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
 }
+
 @keyframes spacingIn {
     from {
         letter-spacing: 20px;
         opacity: 0;
     }
-    
+
     to {
         letter-spacing: 0;
         opacity: 1;
@@ -2415,6 +2431,7 @@ $duration: .75s;
         opacity: 1;
     }
 }
+
 .zoom {
     animation-name: zoom;
 }
@@ -2429,6 +2446,7 @@ $duration: .75s;
         opacity: 1;
     }
 }
+
 .zoom3d {
     animation-name: zoom3d;
 }
@@ -3057,6 +3075,7 @@ $duration: .75s;
     animation-duration: $duration;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
+
     &.ng-enter,
     &.ng-hide-remove {
         animation: fadeOut $duration forwards;
@@ -3071,6 +3090,7 @@ $duration: .75s;
     &.ng-hide-add.ng-hide-add-active {
         animation: fadeOut $duration forwards;
     }
+
     &.ng-leave,
     &.ng-hide-add {
         animation: fadeIn $duration forwards;
@@ -3138,12 +3158,12 @@ $duration: .75s;
 }
 
 
-@for $i from 0 through 50{
+@for $i from 0 through 50 {
     .animated.delay-#{$i}s {
-      -webkit-animation-delay: #{$i}s;
-      animation-delay: #{$i}s;
+        -webkit-animation-delay: #{$i}s;
+        animation-delay: #{$i}s;
     }
-  }
+}
 
 @media (prefers-reduced-motion) {
     .animated {
@@ -3165,8 +3185,8 @@ figure {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 63%; // 100%
+    width: 100vw;
+    height: 60vh; // 100%
     position: absolute;
     top: 0;
     z-index: 1;
@@ -3174,8 +3194,8 @@ figure {
     svg {
         font-family: 'LemonMilkBold', 'impact', sans-serif;
         position: absolute;
-        width: 100%;
-        height: 100%;  // 100%
+        width: 100vw;
+        height: 100%; // 100%
         z-index: 1;
     }
 
@@ -3198,6 +3218,7 @@ figure {
             --fontMargin: 80px;
             user-select: none;
         }
+
         &.dev {
             --fontSize: 20px;
             letter-spacing: 4px;
@@ -3296,6 +3317,45 @@ figure {
             stroke-dasharray: 0 50%;
             stroke-width: 1;
         }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    figure {
+        // mix-blend-mode: overlay;
+        --color: transparent;
+        --stroke: #435AD9;
+        --fontSize: 100px;
+        --fontMargin: 100px;
+        --interval: 7s;
+        --strokeWidth: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20%; // 100%
+        position: absolute;
+        top: 0;
+        z-index: 1;
+
+        svg {
+            font-family: 'LemonMilkBold', 'impact', sans-serif;
+            position: relative;
+            top: -60%;
+            height: 100%; // 100%
+            z-index: 1;
+        }¨
+
+        svg text {
+            text-transform: uppercase;
+            stroke-width: var(--strokeWidth);
+            stroke: var(--color);
+            font-size: calc(var(--fontSize) + 10px);
+            letter-spacing: -10px;
+            z-index: 1;
+        }
+
     }
 
 }

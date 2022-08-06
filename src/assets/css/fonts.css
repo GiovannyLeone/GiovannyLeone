@@ -3,7 +3,6 @@
     src: url("../fonts/LEMONMILK-Bold.otf");
 }
 
-
 @font-face {
     font-family: LemonMilkMedium;
     src: url("../fonts/LEMONMILK-Medium.otf");
@@ -17,4 +16,31 @@
 @font-face {
     font-family: LemonMilkRegular;
     src: url("../fonts/LEMONMILK-Regular.otf");
+}
+
+/* Samsung Font */
+
+@font-face {
+    font-family: SamsungSans-Bold;
+    src: url("../fonts/SamsungSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: SamsungSans-Medium;
+    src: url("../fonts/SamsungSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: SamsungSans-Light;
+    src: url("../fonts/SamsungSans-Light.ttf");
+}
+
+@font-face {
+    font-family: SamsungSans-Thin;
+    src: url("../fonts/SamsungSans-Thin.ttf");
+}
+
+@font-face {
+    font-family: SamsungSans-Regular;
+    src: url("../fonts/SamsungSans-Regular.ttf");
 }
