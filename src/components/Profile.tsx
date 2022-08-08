@@ -44,7 +44,7 @@ export default function Profile() {
                                 <text className="xl dev" x="18.5%" y="110%" dy=".35em" text-anchor="middle">Full-Stack Dev</text>
                             </svg>
                         </figure>
-                        <p className='textAboutMe'>Olá Mundo! Me chamo Giovanny, tenho 19 anos e sou desenvolvedor junior. Desenvolvo aplicações web tanto Front-End
+                        <p className='textAboutMe'>Olá Mundo! Me chamo Giovanny, tenho 19 anos e sou desenvolvedor junior. Desenvolvo aplicações web, tanto Front-End
                             como Back-End, focado sempre em aprender mais, e agregar conhecimento ao meu time, possuo conhecimentos em HTML5, CSS3,
                             JavaScript, PHP, PDO, Jquery, React, Next.js, TypeScript, MySql, Sql Server e modelagem de banco dados.</p>
                         <button id='skills' onClick={() => { comingSoon() }}>My Soft Skills</button>
