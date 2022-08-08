@@ -3,4 +3,5 @@ root{
     --darkBlue: #3747A6;
     --lightBlue: #435AD9;
     --myBlack: #0D0D0D;
+    --bg: linear-gradient(#FFF, #DDD);
 }

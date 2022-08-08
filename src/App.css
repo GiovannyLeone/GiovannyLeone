@@ -11,8 +11,8 @@
 
 body{
     font-family: 'SamsungSans-Regular', sans-serif;
-    background-color: var(--grayBg); /*var(--grayBg) */
-    overflow: hidden;
+    background: var(--bg); /*var(--grayBg) */
+    overflow-x: hidden;
 }
 
 #profile{
@@ -31,13 +31,13 @@ body{
 }
 
 #aboutMe :where(h1, p){
-    padding: 17rem 0 5rem 0;
+    padding: 18rem 0 2rem 0;
 
 }
 
 #aboutMe button{
     padding: 10px 35px;
-    margin: 0 20px;
+    margin: 2px 20px;
     border: 2px solid #3747A6;
     background-color: #435AD9;
     color: #FFF;
@@ -45,6 +45,7 @@ body{
     font-family: 'LemonMilkMedium';
     z-index: 999;
     cursor: pointer;
+    width: 230px;
 }
 #aboutMe button:hover{
     cursor: pointer;
@@ -146,7 +147,7 @@ Efeito de fechar o menu
     }
 
     100% {
-        transform: rotate(315deg) translateX(-1500px);
+        transform: rotate(315deg) translateX(-750px);
         opacity: 0;
     }
 }
@@ -233,9 +234,10 @@ Efeito de fechar o menu
 
 @media screen and (max-width: 768px) {
 
-    .me{
-        width: 500px;
-    }
+    .me {
+        margin: 4rem 0 5rem 0 ;
+        width: 300px;
+      }
 
     #profile{
         display: grid;
@@ -251,7 +253,7 @@ Efeito de fechar o menu
     .textAboutMe{
         text-align: justify;
         font-size: 20px;
-        margin: 0 10px;
+        margin: 0 14px;
     }
 
     .starts::before {
@@ -263,6 +265,15 @@ Efeito de fechar o menu
         height: 1px;
         background: linear-gradient(90deg, #435ad9, transparent);
     }
+
+    #profile {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+      #aboutMe :where(h1, p) {
+        padding: 1rem 0 1rem 0;
+      }
+    
 
     @keyframes animate {
         0% {
