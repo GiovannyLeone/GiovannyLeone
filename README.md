@@ -1,6 +1,6 @@
 # Getting Started My Web portfolio
 
-This Project use Node.js | React.TSX | Jquery | Scss | in future Back-End with TS or PHP
+## This Project use Node.js | React.TSX | Jquery | Scss | in future Back-End with TS or PHP
 
 Read about React Documentation: 
 [Create React App](https://github.com/facebook/create-react-app).
@@ -50,5 +50,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 "repository": "<your repositorio>"
   
-  -- `npm run predeploy`
+  -- `npm run predeploy` < br/>
   -- `npm run deploy`
