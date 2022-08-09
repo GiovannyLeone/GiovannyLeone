@@ -54,6 +54,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 On the top, add this line:
 "repository": "your repositorio"
   
- In the Scripts you has this comands:
+ In the Scripts you has this comands: <br />
   -- `npm run predeploy` <br/>
   -- `npm run deploy`
