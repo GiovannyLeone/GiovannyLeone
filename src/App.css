@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('assets/css/fonts.css');
 @import url('assets/css/colors.css');
-
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'SamsungSans-Regular', sans-serif;
-    background: var(--bg); /*var(--grayBg) */
+    background: var(--bg);
+    /*var(--grayBg) */
     overflow-x: hidden;
 }
 
-#profile{
+#profile {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     width: 70vw;
@@ -26,16 +25,16 @@ body{
     z-index: 2;
 }
 
-.me{
+.me {
     width: 500px;
 }
 
-#aboutMe :where(h1, p){
+#aboutMe :where(h1,
+p) {
     padding: 18rem 0 2rem 0;
-
 }
 
-#aboutMe button{
+#aboutMe button {
     padding: 10px 35px;
     margin: 2px 20px;
     border: 2px solid #3747A6;
@@ -47,25 +46,25 @@ body{
     cursor: pointer;
     width: 230px;
 }
-#aboutMe button:hover{
+
+#aboutMe button:hover {
     cursor: pointer;
 }
 
-.myName{
+.myName {
     color: #435AD9;
     user-select: none;
     padding: 10% 0;
     font-size: 70px;
 }
 
-.textAboutMe{
+.textAboutMe {
     text-align: justify;
     font-size: 20px;
 }
 
+
 /* Menu */
-
-
 
 .menuHamburguer span {
     position: absolute;
@@ -74,8 +73,6 @@ body{
     width: 100%;
     border-radius: 30px;
     background: #3747A6;
-
-    
 }
 
 .menuHamburguer>span:nth-child(1) {
@@ -83,7 +80,6 @@ body{
     z-index: 9999;
     /* Efeito Neon Cores respectivas */
     background: #3747A6;
-    
 }
 
 .menuHamburguer>span:nth-child(2) {
@@ -92,8 +88,6 @@ body{
     z-index: 9999;
     /* Efeito Neon Cores respectivas */
     background: #3747A6;
-  
-
 }
 
 .menuHamburguer>span:nth-child(3) {
@@ -102,14 +96,15 @@ body{
     z-index: 9999;
     /* Efeito Neon Cores respectivas */
     background: #3747A6;
-
 }
+
 
 /* Close The Btn 
 
 Efeito de fechar o menu 
 
 */
+
 
 /* star shooting */
 
@@ -141,11 +136,9 @@ Efeito de fechar o menu
         transform: rotate(315deg) translateX(0);
         opacity: 1;
     }
-
     70% {
         opacity: 0.5;
     }
-
     100% {
         transform: rotate(315deg) translateX(-750px);
         opacity: 0;
@@ -232,14 +225,18 @@ Efeito de fechar o menu
     animation-duration: 2.25s;
 }
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 1440px) {
     .me {
-        margin: 4rem 0 5rem 0 ;
-        width: 300px;
-      }
+        padding: 0 2rem;
+    }
+}
 
-    #profile{
+@media screen and (max-width: 768px) {
+    .me {
+        margin: 4rem 0 5rem 0;
+        width: 300px;
+    }
+    #profile {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         width: 100vw;
@@ -249,13 +246,11 @@ Efeito de fechar o menu
         margin: 0;
         z-index: 2;
     }
-
-    .textAboutMe{
+    .textAboutMe {
         text-align: justify;
         font-size: 20px;
         margin: 0 14px;
     }
-
     .starts::before {
         content: '';
         position: absolute;
@@ -265,32 +260,26 @@ Efeito de fechar o menu
         height: 1px;
         background: linear-gradient(90deg, #435ad9, transparent);
     }
-
     #profile {
         grid-template-columns: repeat(1, 1fr);
-      }
-    
-      #aboutMe :where(h1, p) {
+    }
+    #aboutMe :where(h1,
+    p) {
         padding: 1rem 0 1rem 0;
-      }
-    
-
+    }
     @keyframes animate {
         0% {
             transform: rotate(-90deg) translateX(100px);
             opacity: 1;
         }
-    
         70% {
             opacity: 0.5;
         }
-    
         100% {
             transform: rotate(-90deg) translateX(-400px);
             opacity: 0;
         }
     }
-
     .starts:nth-child(1) {
         top: -4px;
         right: 10%;
@@ -298,7 +287,6 @@ Efeito de fechar o menu
         animation-delay: 0;
         animation-duration: 1s;
     }
-    
     .starts:nth-child(2) {
         top: -4px;
         right: 20%;
@@ -306,9 +294,7 @@ Efeito de fechar o menu
         animation-delay: 0.2s;
         animation-duration: 3s;
         display: none;
-
     }
-    
     .starts:nth-child(3) {
         top: -4px;
         right: 30%;
@@ -316,7 +302,6 @@ Efeito de fechar o menu
         animation-delay: 0.4s;
         animation-duration: 2s;
     }
-    
     .starts:nth-child(4) {
         top: -4px;
         right: 40%;
@@ -324,9 +309,7 @@ Efeito de fechar o menu
         animation-delay: 0.6s;
         animation-duration: 1.5s;
         display: none;
-
     }
-    
     .starts:nth-child(5) {
         top: -4px;
         right: 50%;
@@ -334,7 +317,6 @@ Efeito de fechar o menu
         animation-delay: 0.8s;
         animation-duration: 2.5s;
     }
-    
     .starts:nth-child(6) {
         top: -4px;
         right: 60%;
@@ -342,9 +324,7 @@ Efeito de fechar o menu
         animation-delay: 1s;
         animation-duration: 3s;
         display: none;
-
     }
-    
     .starts:nth-child(7) {
         top: -4px;
         right: 70%;
@@ -352,7 +332,6 @@ Efeito de fechar o menu
         animation-delay: 1s;
         animation-duration: 1.75s;
     }
-    
     .starts:nth-child(8) {
         top: -4px;
         right: 80%;
@@ -360,9 +339,7 @@ Efeito de fechar o menu
         animation-delay: 1.4s;
         animation-duration: 1.25s;
         display: none;
-
     }
-    
     .starts:nth-child(9) {
         top: -4px;
         right: 90%;
@@ -370,7 +347,6 @@ Efeito de fechar o menu
         animation-delay: 0.75s;
         animation-duration: 2.25s;
     }
-    
     .starts:nth-child(10) {
         top: -4px;
         right: 100%;
@@ -378,7 +354,5 @@ Efeito de fechar o menu
         animation-delay: 2.75s;
         animation-duration: 2.25s;
         display: none;
-
     }
-
 }

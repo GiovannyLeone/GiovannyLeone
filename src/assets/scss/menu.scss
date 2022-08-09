@@ -1,130 +1,119 @@
-@import '../css/colors.css', '../css/fonts.css';
-
+@import '../css/colors.css',
+'../css/fonts.css';
 .menu {
-  position: fixed;
-  height: 22px;
-  width: 35px;
-  top: 24px;
-  left: 24px;
-  z-index: 99;
-  transition: all .25s;
-  cursor: pointer;
-
-  img {
-    width: 24px;
-  }
-
-  &:hover {
-    transform: scale(1.2);
-  }
-
-  &.opened {
+    position: fixed;
+    height: 22px;
+    width: 35px;
+    top: 24px;
+    left: 24px;
+    z-index: 999;
+    transition: all .25s;
+    cursor: pointer;
     img {
-      filter: brightness(0) invert(1);
+        width: 24px;
     }
-  }
+    &:hover {
+        transform: scale(1.2);
+    }
+    &.opened {
+        img {
+            filter: brightness(0) invert(1);
+        }
+    }
 }
 
 .menu span {
-  position: absolute;
-  display: block;
-  height: 5px;
-  width: 100%;
-  border-radius: 30px;
-  background: #3747A6;
-  
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    background: #3747A6;
 }
 
 .menu>span:nth-child(1) {
-  top: 0;
-  z-index: 9999;
+    top: 0;
+    z-index: 9999;
 }
 
 .menu>span:nth-child(2) {
-  top: 8px;
-  left: 13px;
-  z-index: 9999;
+    top: 8px;
+    left: 13px;
+    z-index: 9999;
 }
 
 .menu>span:nth-child(3) {
-  top: 16px;
-  left: 28px;
-  z-index: 9999;
-
+    top: 16px;
+    left: 28px;
+    z-index: 9999;
 }
 
 .back {
-  position: fixed;
-  z-index: 999;
-  padding: 10px 20px;
-  left: 65px;
-  top: 20px;
-  background: var(--black);
-  border-radius: 100px;
-  color: var(--white);
-  font-size: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
+    position: fixed;
+    z-index: 999;
+    padding: 10px 20px;
+    left: 65px;
+    top: 20px;
+    background: var(--black);
+    border-radius: 100px;
+    color: var(--white);
+    font-size: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .menu-items {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #000000DD;
-  backdrop-filter: blur(10px);
-  width: calc(100% - 100px);
-  height: calc(100% - 100px);
-  display: grid;
-  place-content: start;
-  color: var(--white);
-  z-index: 9;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: 50px;
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: var(--primary);
-    margin-top: 30px;
-  }
-
-  .link {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  a,
-  a:visited,
-  a:active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000000DD;
+    backdrop-filter: blur(10px);
+    width: calc(100% - 100px);
+    height: calc(100% - 100px);
+    display: grid;
+    place-content: start;
     color: var(--white);
-    font-size: 32px;
-    position: relative;
-
-    @media screen and (max-width: 768px) {
-      font-size: 24px;
+    z-index: 9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 50px;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: var(--primary);
+        margin-top: 30px;
     }
-
-    &:before {
-      content: '';
-      position: absolute;
-      height: 3px;
-      background: var(--white);
-      bottom: 0;
-      display: inline-block;
-      clear: both;
-      width: 0;
-      transition: all .25s ease-in-out;
+    .link {
+        display: block;
+        margin-bottom: 10px;
     }
-  }
-
-  a:hover {
-    &:before {
-      width: 100%;
+    a,
+    a:visited,
+    a:active {
+        color: var(--white);
+        font-size: 32px;
+        position: relative;
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            height: 3px;
+            background: var(--white);
+            bottom: 0;
+            display: inline-block;
+            clear: both;
+            width: 0;
+            transition: all .25s ease-in-out;
+        }
     }
-  }
+    a:hover {
+        &:before {
+            width: 100%;
+        }
+    }
 }
