@@ -15,7 +15,7 @@ Add TypeScript/Types, case you already created the App <br />
 Add Jquery and @types/jquery
 `-- npm i jquery`
 `-- npm i @types/jquery`
-<br />
+<br /><br />
 Add Sass | Scss
 `-- npm i node-sass`
 
