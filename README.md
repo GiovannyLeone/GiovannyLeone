@@ -1,8 +1,24 @@
-# Getting Started with Create React App
+# Getting Started My Web portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Project use Node.js | React.TSX | Jquery | Scss | in future Back-End with TS or PHP
 
-## Available Scripts
+Read about React Documentation: 
+[Create React App](https://github.com/facebook/create-react-app).
+
+For to begin this project, you need run in terminal:
+
+Creating React app with template typescript:
+-- npx create-react-app my-app --template typescript
+Add TypeScript/Types, case you already created the App
+-- npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+
+Add Jquery and @types/jquery
+-- npm i jquery
+-- npm i @types/jquery
+
+Add Sass | Scss
+-- npm i node-sass
+
 
 In the project directory, you can run:
 
