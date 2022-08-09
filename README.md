@@ -8,8 +8,11 @@ Read about React Documentation:
 For to begin this project, you need run in terminal:
 
 Creating React app with template typescript: <br />
+
 -- `npx create-react-app my-app --template typescript` <br />
+
 Add TypeScript/Types, case you already created the App <br />
+
 -- `npm install --save typescript @types/node @types/react @types/react-dom @types/jest` <br />
 <br />
 Add Jquery and @types/jquery
