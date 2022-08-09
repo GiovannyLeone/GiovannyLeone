@@ -51,7 +51,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Add your GitHub in the project in package.json
 
-"repository": "<your repositorio>"
+"repository": "your repositorio"
   
   -- `npm run predeploy` <br/>
   -- `npm run deploy`
