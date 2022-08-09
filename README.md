@@ -8,16 +8,16 @@ Read about React Documentation:
 For to begin this project, you need run in terminal:
 
 Creating React app with template typescript: <br />
-`-- npx create-react-app my-app --template typescript` <br />
+-- `npx create-react-app my-app --template typescript` <br />
 Add TypeScript/Types, case you already created the App <br />
-`-- npm install --save typescript @types/node @types/react @types/react-dom @types/jest` <br />
+-- `npm install --save typescript @types/node @types/react @types/react-dom @types/jest` <br />
 <br />
 Add Jquery and @types/jquery
-`-- npm i jquery`
-`-- npm i @types/jquery`
+-- `npm i jquery`
+-- `npm i @types/jquery`
 <br /><br />
 Add Sass | Scss
-`-- npm i node-sass`
+-- `npm i node-sass`
 
 <hr />
 
@@ -26,7 +26,7 @@ Now, you can run your App, Let´s GO!!!
 
 In the project directory, you can run:
 
-`-- npm start`
+-- `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
