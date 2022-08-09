@@ -8,16 +8,16 @@ Read about React Documentation:
 For to begin this project, you need run in terminal:
 
 Creating React app with template typescript:
--- npx create-react-app my-app --template typescript
+### `-- npx create-react-app my-app --template typescript`
 Add TypeScript/Types, case you already created the App
--- npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+### `-- npm install --save typescript @types/node @types/react @types/react-dom @types/jest`
 
 Add Jquery and @types/jquery
--- npm i jquery
--- npm i @types/jquery
+### `-- npm i jquery`
+### `-- npm i @types/jquery`
 
 Add Sass | Scss
--- npm i node-sass
+### `-- npm i node-sass`
 
 
 In the project directory, you can run:
