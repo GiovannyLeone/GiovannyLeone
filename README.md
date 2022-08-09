@@ -19,12 +19,12 @@ Add Jquery and @types/jquery
 Add Sass | Scss
 `-- npm i node-sass`
 
-
-In the project directory, you can run:
+<hr />
 
 Now, you can run your App, Let´s GO!!!
 
-In terminal use
+
+In the project directory, you can run:
 
 `-- npm start`
 
